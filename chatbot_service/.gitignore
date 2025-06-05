@@ -1,0 +1,54 @@
+# Python compiled files
+__pycache__/
+*.py[cod]
+*.so
+
+# Virtual environments
+venv/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints
+
+# Model files
+*.pkl
+*.pt
+*.h5
+*.hdf5
+*.joblib
+*.sav
+
+# FAISS index files
+*.faiss
+*.index
+
+# Dataset or intermediate files (si jamais tu en génères)
+*.csv
+*.tsv
+*.json
+
+# Logs
+*.log
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Credentials or secret keys (par précaution)
+.env
+*.env
+
+# Django specific
+*.sqlite3
+db.sqlite3
+
+# Migration artifacts
+migrations/__pycache__/
+
+# Cache
+.cache/
+*.bak
+
+# PyCharm / VSCode / IDE
+.idea/
+.vscode/
