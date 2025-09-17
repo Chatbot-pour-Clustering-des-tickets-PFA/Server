@@ -10,13 +10,10 @@ def chatbot_interaction(request):
         user_input = request.POST.get('user_input', '')  
         dialogue_state = request.session.get('dialogue_state', {})  
 
-        # Call the chatbot function to process the input
         response, updated_state = interactive_chatbot(user_input, dialogue_state)
 
-        # Save the updated state to the session
         request.session['dialogue_state'] = updated_state
 
-        # Return the response as JSON
         return JsonResponse({'response': response})
 
     return JsonResponse({'error': 'Invalid request'}, status=400)
